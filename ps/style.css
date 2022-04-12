@@ -16,45 +16,87 @@ body {
 	justify-content: center;
 	align-items: center;
 	width: 100vw;
-	height: 100vh;
-	background: url("bg.jpeg") no-repeat fixed center;
+	height: 80vh;
+	background: url("bg.jpg") no-repeat fixed center;
 	background-size: cover;
 }
 
-.container {
-	width: 700px;
-	max-width: 90%;
+#container {
+	width: 400px;
+	padding-right: 15px;
+	padding-left: 15px;
 }
 
 .black {
-	background-color: black;
-	padding: 10px;
+	background-color: #F8F8F8;
 	text-align: center;
 	border-radius: 20px;
-	box-shadow: 0 0 10px 2px;
+	box-shadow: 0 0 10px 2px #ffffff;
 }
 
-.answer {
+.question h1 {
+	padding-top: 15px;
+	font-size: 30px;
+	color: #A34336;
+}
+
+.question p {
+	margin-top: -10px;
+	font-size: 20px;
+	color: #343A40;
+}
+
+.cta {
+	padding-bottom: 20px;
+	justify-content: center;
 	display: grid;
 	grid-template-columns: repeat(1, auto);
 	gap: 10px;
 }
 
 .btn {
-	border-radius: 10px;
+	width: 300px;
 	padding: 5px 10px;
-	font-size: 30px;
-	background-color: #f7ce6a;
+	border-radius: 10px;
+	font-size: 20px;
+	border: 1px solid #5D1515;
+	background-color: #A34336;
+	box-shadow: 0 0 6px 2px #A34336;
 	outline: none;
-	color: black;
+	color: #F8F8F8;
 	text-decoration: none;
 }
 
-.black h1 {
-	color: yellow;
+.btn:hover{
+	background: #5D1515;
+	background: -moz-linear-gradient(top, #5D1515 0%, #A34336 100%);
+	background: -webkit-linear-gradient(top, #5D1515 0%, #A34336 100%);
+	background: linear-gradient(to bottom, #5D1515 0%, #A34336 100%);
+	border-radius: 10px;
 }
 
-.black p {
-	font-size: 18px;
-	color: white;
+
+#rodape {
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	background-color: #5D1515;
+	color: #ffffff;
+}
+
+.direitos {
+	max-width: 600px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin: auto;
+
+}
+
+.direitos p{
+	color: #F8F8F8;
+	font-size: 12px;
+	
 }

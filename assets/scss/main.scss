@@ -1,0 +1,990 @@
+main {
+	max-width: 600px;
+	margin: auto;
+	justify-content: center;
+	align-items: center;
+	color: $preto;
+
+	/* Headline */
+	.headline{
+		text-align: center;
+		justify-content: center;
+		line-height: 1.2;
+
+		.headline-1{
+			color: $cinza;
+			font-size: 30px;
+			text-decoration:underline;
+
+		}
+
+		.headline-2{
+			font-size: 30px;
+			font-weight: bold;
+			color: $red;
+			text-transform: uppercase;	
+		}
+
+		.headline-3{
+			font-size: 30px;
+			font-weight: bold;
+			color: $cinza;	
+		}
+
+	}
+
+	/* VSL */
+	.vsl{
+		border-radius: 2px;
+		box-shadow:0px 0px 8px 2px $cinza;
+	}
+
+	/* Lembrete Som Aitov */
+	.lembrete{
+		color: $cinza;
+		justify-content: center;
+		align-items: center;
+
+		span {
+			font-family: 'Montserrat', sans-serif;
+			font-size: 12px;
+			font-weight: 500;
+			text-align: center;
+		}
+	}
+
+	/* Botão */
+	.cta {
+		justify-content: center;
+		display: flex;
+
+		#cta1{
+			display: flex;
+			justify-content: center;
+			align-items: center;	
+			text-align: center;
+			box-shadow: 3px 3px 20px 5px rgba(255,85,53,0.5);
+			border-radius: 6px;
+
+			a{
+				background-image: linear-gradient(to bottom, #ff6600, #ff6116, #ff5d22, #ff592c, #ff5535);; 
+      			border-radius: 6px;
+      			padding: 10px 35px;
+				font-size: 20px;
+				color:$branco;
+				text-decoration: none;
+				letter-spacing: 1px;
+				text-align: center;
+				align-items: center;
+				justify-content: center;
+
+				&:hover{
+					background-image: linear-gradient(to top, #ff6600, #ff6116, #ff5d22, #ff592c, #ff5535);; 
+      				border-radius: 6px;
+				}
+			}
+		}
+	}
+
+	/* PROVA SOCIAL */
+	.prova-social{
+		max-width: 500px;
+		justify-content: center;
+		align-items:center;
+		font-family: 'Montserrat', sans-serif;
+		
+
+    	.centralizar{
+    		padding-left: 20px;
+    		padding-right: 20px;
+    		margin-top: 50px;
+    		-webkit-box-sizing: border-box;
+    		-moz-box-sizing: border-box;
+    		box-sizing: border-box;
+    		border: 0px solid rgb(163,186,198);
+    		border-radius: 24px;
+    		filter: hue-rotate(0deg) saturate(1) brightness(1) contrast(1) invert(0) sepia(0) blur(0px) grayscale(0);
+    		background-color: rgb(255,255,255);
+    		background-size: cover;
+    		z-index: 14;
+    		opacity: 1;
+		    text-align: left;	
+
+		    // Quantidade Comentários
+		    #c_1 {
+		    	padding-top:15px;
+		    	padding-left: 10px;
+
+    			.c_titulo {
+    				z-index: 140;
+    				text-align: left;
+    				letter-spacing: 0px;
+    				text-shadow: none;
+    				opacity: 1;
+
+    				h2{
+    					font-size: 14px;
+    					line-height: 18px;
+    					font-style: normal;
+    					font-weight: 500;
+    					color: #5d5d5d;
+    				}
+				}
+			}
+
+			// Linha Horizontal Superior
+			#c_2 {
+
+    			.c_linha_horizontal {
+    				z-index: 150;
+    				border-bottom: 1px solid rgb(222,231,235);
+				}
+			}
+
+			// Elementos Comentario Perfil 1
+			#c_3 {
+    			margin-top: 20px;    			
+
+    			// Imagem Perfil
+    			.c_imagem {
+    				z-index: 150;
+    				filter: hue-rotate(0deg) saturate(1) brightness(1) contrast(1) invert(0) sepia(0) blur(0px) grayscale(0);
+    				border-radius: 100px;
+    				float: left;
+
+    				.imagem-fundo{
+    					border: 0px solid rgb(163,186,198);
+    					border-radius: 100px;
+    					background-size:cover;
+    					height: 45px;
+    					width: 45px;
+    					background-repeat: no-repeat;
+    					border-radius: 100px;
+    					opacity: 150;
+    				}
+				}
+
+				// Caixa Comentário
+
+				.c_caixa {
+					margin-left: 50px;
+					z-index: 130;
+    				opacity: 1;
+    				border: 0px solid rgb(163,186,198);
+    				filter: hue-rotate(0deg) saturate(1) brightness(1) contrast(1) invert(0) sepia(0) blur(0px) grayscale(0);
+    				border-radius: 18px;
+    				background-image: none;
+    				background-size: cover;
+    				background-color: rgb(240,242,245);
+    				background-position: 50% 50%;
+    				background-repeat: no-repeat;
+
+    				// Nome Comentario
+					.c_nome {
+						z-index: 150;
+    					padding-left:10px;
+    					padding-top: 5px;
+    				
+    					h4{
+    						font-size: 11px;
+    						line-height: 20px;
+    						letter-spacing: 0px;
+    						text-align: left;
+    						color: #181818;
+    						font-weight: 500;
+    					}
+
+					}
+
+					// Texto Comentario
+					.c_comentario{
+						z-index: 200;
+						padding-left: 10px;
+						padding-right: 10px;
+						padding-bottom: 5px;
+						margin-top:-10px;
+
+						h3{
+    						font-size: 13px;
+    						line-height: 15px;
+    						text-align: left;
+    						letter-spacing: 0px;
+    						color: #696969;
+    						font-weight: 300;
+    					}
+					}
+
+					// Curtir, Comentar e Tempo
+					.c_interacoes {
+						float:left;
+						margin-left: 15px;
+						margin-top: 5px;
+						z-index: 180;
+
+
+						h2 {
+							font-size: 11px;
+    						line-height: 1.2;
+    						text-align: left;
+    						letter-spacing: 0px;
+    						color: rgb(102,102,102);
+    						font-weight: 300;
+
+    						b {
+    							font-weight: 500;
+    						}
+						}
+					}
+				}
+			}
+
+			// Elementos Comentario Perfil 2
+			#c_4 {
+				float:left;
+    			margin-left: 60px;
+    			
+
+    			// Imagem Perfil
+    			.c_imagem {
+    				z-index: 150;
+    				filter: hue-rotate(0deg) saturate(1) brightness(1) contrast(1) invert(0) sepia(0) blur(0px) grayscale(0);
+    				box-shadow: none;
+    				border-radius: 100px;
+    				float: left;
+
+    				.imagem-fundo{
+    					border: 0px solid rgb(163,186,198);
+    					border-radius: 100px;
+    					background-size:cover;
+    					height: 30px;
+    					width: 30px;
+    					background-repeat: no-repeat;
+    					border-radius: 100px;
+    					opacity: 150;
+    				}
+				}
+
+				// Caixa Comentário
+
+				.c_caixa {
+					margin-left: 35px;
+					z-index: 130;
+    				opacity: 1;
+    				border: 0px solid rgb(163,186,198);
+    				filter: hue-rotate(0deg) saturate(1) brightness(1) contrast(1) invert(0) sepia(0) blur(0px) grayscale(0);
+    				border-radius: 18px;
+    				background-image: none;
+    				background-size: cover;
+    				background-color: rgb(240,242,245);
+    				background-position: 50% 50%;
+    				background-repeat: no-repeat;
+
+    				// Nome Comentario
+					.c_nome {
+						z-index: 150;
+    					padding-left:10px;
+    					padding-top: 5px;
+    				
+    					h4{
+    						font-size: 11px;
+    						line-height: 20px;
+    						letter-spacing: 0px;
+    						text-align: left;
+    						color: #181818;
+    						font-weight: 500;
+    					}
+
+					}
+
+					// Texto Comentario
+					.c_comentario{
+						z-index: 200;
+						padding-left: 10px;
+						padding-right: 10px;
+						padding-bottom: 5px;
+						margin-top:-10px;
+
+						h3{
+    						font-size: 13px;
+    						line-height: 15px;
+    						text-align: left;
+    						letter-spacing: 0px;
+    						color: #696969;
+    						font-weight: 300;
+    					}
+					}
+
+					// Curtir, Comentar e Tempo
+					.c_interacoes {
+						float:left;
+						margin-left: 15px;
+						margin-top: 5px;
+						z-index: 180;
+
+
+						h2 {
+							font-size: 11px;
+    						line-height: 1.2;
+    						text-align: left;
+    						letter-spacing: 0px;
+    						color: rgb(102,102,102);
+    						font-weight: 300;
+
+    						b {
+    							font-weight: 500;
+    						}
+						}
+					}
+				}
+			}
+
+			// Elementos Comentario Perfil 3
+			#c_5 {
+				float:left;		
+
+    			// Imagem Perfil
+    			.c_imagem {
+    				z-index: 150;
+    				filter: hue-rotate(0deg) saturate(1) brightness(1) contrast(1) invert(0) sepia(0) blur(0px) grayscale(0);
+    				border-radius: 100px;
+    				float: left;
+
+    				.imagem-fundo{
+    					border: 0px solid rgb(163,186,198);
+    					border-radius: 100px;
+    					background-size:cover;
+    					background-repeat: no-repeat;
+    					height: 45px;
+    					width: 45px;
+    					border-radius: 100px;
+    					opacity: 150;
+    				}
+				}
+
+				// Caixa Comentário
+
+				.c_caixa {
+					margin-left: 50px;
+					z-index: 130;
+    				opacity: 1;
+    				border: 0px solid rgb(163,186,198);
+    				filter: hue-rotate(0deg) saturate(1) brightness(1) contrast(1) invert(0) sepia(0) blur(0px) grayscale(0);
+    				border-radius: 18px;
+    				background-image: none;
+    				background-size: cover;
+    				background-color: rgb(240,242,245);
+    				background-position: 50% 50%;
+    				background-repeat: no-repeat;
+
+    				// Nome Comentario
+					.c_nome {
+						z-index: 150;
+    					padding-left:10px;
+    					padding-top: 5px;
+    				
+    					h4{
+    						font-size: 11px;
+    						line-height: 20px;
+    						letter-spacing: 0px;
+    						text-align: left;
+    						color: #181818;
+    						font-weight: 500;
+    					}
+
+					}
+
+					// Texto Comentario
+					.c_comentario{
+						z-index: 200;
+						padding-left: 10px;
+						padding-right: 10px;
+						padding-bottom: 5px;
+						margin-top:-10px;
+
+						h3{
+    						font-size: 13px;
+    						line-height: 15px;
+    						text-align: left;
+    						letter-spacing: 0px;
+    						color: #696969;
+    						font-weight: 300;
+    					}
+					}
+
+					// Curtir, Comentar e Tempo
+					.c_interacoes {
+						float:left;
+						margin-left: 15px;
+						margin-top: 5px;
+						z-index: 180;
+
+						h2 {
+							font-size: 11px;
+    						line-height: 1.2;
+    						text-align: left;
+    						letter-spacing: 0px;
+    						color: rgb(102,102,102);
+    						font-weight: 300;
+
+    						b {
+    							font-weight: 500;
+    						}
+						}
+					}
+				}
+			}
+
+			// Elementos Comentario Perfil 4
+			#c_6 {
+				float:left;
+
+    			// Imagem Perfil
+    			.c_imagem {
+    				z-index: 150;
+    				filter: hue-rotate(0deg) saturate(1) brightness(1) contrast(1) invert(0) sepia(0) blur(0px) grayscale(0);
+    				border-radius: 100px;
+    				float: left;
+
+    				.imagem-fundo{
+    					border: 0px solid rgb(163,186,198);
+    					border-radius: 100px;
+    					background-size:cover;
+    					height: 45px;
+    					width: 45px;
+    					background-repeat: no-repeat;
+    					border-radius: 100px;
+    					opacity: 150;
+    				}
+				}
+
+				// Caixa Comentário
+
+				.c_caixa {
+					margin-left: 50px;
+					z-index: 130;
+    				opacity: 1;
+    				border: 0px solid rgb(163,186,198);
+    				filter: hue-rotate(0deg) saturate(1) brightness(1) contrast(1) invert(0) sepia(0) blur(0px) grayscale(0);
+    				border-radius: 18px;
+    				background-image: none;
+    				background-size: cover;
+    				background-color: rgb(240,242,245);
+    				background-position: 50% 50%;
+    				background-repeat: no-repeat;
+
+    				// Nome Comentario
+					.c_nome {
+						z-index: 150;
+    					padding-left:10px;
+    					padding-top: 5px;
+    				
+    					h4{
+    						font-size: 11px;
+    						line-height: 20px;
+    						letter-spacing: 0px;
+    						text-align: left;
+    						color: #181818;
+    						font-weight: 500;
+    					}
+
+					}
+
+					// Texto Comentario
+					.c_comentario{
+						z-index: 200;
+						padding-left: 10px;
+						padding-right: 10px;
+						padding-bottom: 5px;
+						margin-top:-10px;
+
+						h3{
+    						font-size: 13px;
+    						line-height: 15px;
+    						text-align: left;
+    						letter-spacing: 0px;
+    						color: #696969;
+    						font-weight: 300;
+    					}
+					}
+
+					// Curtir, Comentar e Tempo
+					.c_interacoes {
+						float:left;
+						margin-left: 15px;
+						margin-top: 5px;
+						z-index: 180;
+
+
+						h2 {
+							font-size: 11px;
+    						line-height: 1.2;
+    						text-align: left;
+    						letter-spacing: 0px;
+    						color: rgb(102,102,102);
+    						font-weight: 300;
+
+    						b {
+    							font-weight: 500;
+    						}
+						}
+					}
+				}
+			}
+
+			// Elementos Comentario Perfil 5
+			#c_7 {
+				float:left;
+    			margin-left: 60px;		
+
+    			// Imagem Perfil
+    			.c_imagem {
+    				z-index: 150;
+    				filter: hue-rotate(0deg) saturate(1) brightness(1) contrast(1) invert(0) sepia(0) blur(0px) grayscale(0);
+    				border-radius: 100px;
+    				float: left;
+
+    				.imagem-fundo{
+    					border: 0px solid rgb(163,186,198);
+    					border-radius: 100px;
+    					background-size:cover;
+    					height: 30px;
+    					width: 30px;
+    					background-repeat: no-repeat;
+    					border-radius: 100px;
+    					opacity: 150;
+    				}
+				}
+
+				// Caixa Comentário
+
+				.c_caixa {
+					margin-left: 35px;
+					z-index: 130;
+    				opacity: 1;
+    				border: 0px solid rgb(163,186,198);
+    				filter: hue-rotate(0deg) saturate(1) brightness(1) contrast(1) invert(0) sepia(0) blur(0px) grayscale(0);
+    				border-radius: 18px;
+    				background-image: none;
+    				background-size: cover;
+    				background-color: rgb(240,242,245);
+    				background-position: 50% 50%;
+    				background-repeat: no-repeat;
+
+    				// Nome Comentario
+					.c_nome {
+						z-index: 150;
+    					padding-left:10px;
+    					padding-top: 5px;
+    				
+    					h4{
+    						font-size: 11px;
+    						line-height: 20px;
+    						letter-spacing: 0px;
+    						text-align: left;
+    						color: #181818;
+    						font-weight: 500;
+    					}
+
+					}
+
+					// Texto Comentario
+					.c_comentario{
+						z-index: 200;
+						padding-left: 10px;
+						padding-right: 10px;
+						padding-bottom: 5px;
+						margin-top:-10px;
+
+						h3{
+    						font-size: 13px;
+    						line-height: 15px;
+    						text-align: left;
+    						letter-spacing: 0px;
+    						color: #696969;
+    						font-weight: 300;
+    					}
+					}
+
+					// Curtir, Comentar e Tempo
+					.c_interacoes {
+						float:left;
+						margin-left: 15px;
+						margin-top: 5px;
+						z-index: 180;
+
+
+						h2 {
+							font-size: 11px;
+    						line-height: 1.2;
+    						text-align: left;
+    						letter-spacing: 0px;
+    						color: rgb(102,102,102);
+    						font-weight: 300;
+
+    						b {
+    							font-weight: 500;
+    						}
+						}
+					}
+				}
+			}
+
+			// Elementos Comentario Perfil 6
+			#c_8 {
+				float:left;
+    			margin-left: 60px;
+    			
+
+    			// Imagem Perfil
+    			.c_imagem {
+    				z-index: 150;
+    				filter: hue-rotate(0deg) saturate(1) brightness(1) contrast(1) invert(0) sepia(0) blur(0px) grayscale(0);
+    				border-radius: 100px;
+    				float: left;
+
+    				.imagem-fundo{
+    					border: 0px solid rgb(163,186,198);
+    					border-radius: 100px;
+    					background-size:cover;
+    					height: 30px;
+    					width: 30px;
+    					background-repeat: no-repeat;
+    					border-radius: 100px;
+    					opacity: 150;
+    				}
+				}
+
+				// Caixa Comentário
+				.c_caixa {
+					margin-left: 35px;
+					z-index: 130;
+    				opacity: 1;
+    				border: 0px solid rgb(163,186,198);
+    				filter: hue-rotate(0deg) saturate(1) brightness(1) contrast(1) invert(0) sepia(0) blur(0px) grayscale(0);
+    				border-radius: 18px;
+    				background-image: none;
+    				background-size: cover;
+    				background-color: rgb(240,242,245);
+    				background-position: 50% 50%;
+    				background-repeat: no-repeat;
+
+    				// Nome Comentario
+					.c_nome {
+						z-index: 150;
+    					padding-left:10px;
+    					padding-top: 5px;
+    				
+    					h4{
+    						font-size: 11px;
+    						line-height: 20px;
+    						letter-spacing: 0px;
+    						text-align: left;
+    						color: #181818;
+    						font-weight: 500;
+    					}
+
+					}
+
+					// Texto Comentario
+					.c_comentario{
+						z-index: 200;
+						padding-left: 10px;
+						padding-right: 10px;
+						padding-bottom: 5px;
+						margin-top:-10px;
+
+						h3{
+    						font-size: 13px;
+    						line-height: 15px;
+    						text-align: left;
+    						letter-spacing: 0px;
+    						color: #696969;
+    						font-weight: 300;
+    					}
+					}
+
+					// Curtir, Comentar e Tempo
+					.c_interacoes {
+						float:left;
+						margin-left: 15px;
+						margin-top: 5px;
+						z-index: 180;
+
+
+						h2 {
+							font-size: 11px;
+    						line-height: 1.2;
+    						text-align: left;
+    						letter-spacing: 0px;
+    						color: rgb(102,102,102);
+    						font-weight: 300;
+
+    						b {
+    							font-weight: 500;
+    						}
+						}
+					}
+				}
+			}
+
+			// Elementos Comentario Perfil 7
+			#c_9 {
+				float:left;
+    			
+    			// Imagem Perfil
+    			.c_imagem {
+    				z-index: 150;
+    				filter: hue-rotate(0deg) saturate(1) brightness(1) contrast(1) invert(0) sepia(0) blur(0px) grayscale(0);
+    				border-radius: 100px;
+    				float: left;
+
+    				.imagem-fundo{
+    					border: 0px solid rgb(163,186,198);
+    					border-radius: 100px;
+    					background-size:cover;
+    					height: 45px;
+    					width: 45px;
+    					background-repeat: no-repeat;
+    					border-radius: 100px;
+    					opacity: 150;
+    				}
+				}
+
+				// Caixa Comentário
+				.c_caixa {
+					margin-left: 50px;
+					z-index: 130;
+    				opacity: 1;
+    				border: 0px solid rgb(163,186,198);
+    				filter: hue-rotate(0deg) saturate(1) brightness(1) contrast(1) invert(0) sepia(0) blur(0px) grayscale(0);
+    				border-radius: 18px;
+    				background-image: none;
+    				background-size: cover;
+    				background-color: rgb(240,242,245);
+    				background-position: 50% 50%;
+    				background-repeat: no-repeat;
+
+    				// Nome Comentario
+					.c_nome {
+						z-index: 150;
+    					padding-left:10px;
+    					padding-top: 5px;
+    				
+    					h4{
+    						font-size: 11px;
+    						line-height: 20px;
+    						letter-spacing: 0px;
+    						text-align: left;
+    						color: #181818;
+    						font-weight: 500;
+    					}
+
+					}
+
+					// Texto Comentario
+					.c_comentario{
+						z-index: 200;
+						padding-left: 10px;
+						padding-right: 10px;
+						padding-bottom: 5px;
+						margin-top:-10px;
+
+						h3{
+    						font-size: 13px;
+    						line-height: 15px;
+    						text-align: left;
+    						letter-spacing: 0px;
+    						color: #696969;
+    						font-weight: 300;
+    					}
+					}
+
+					// Curtir, Comentar e Tempo
+					.c_interacoes {
+						float:left;
+						margin-left: 15px;
+						margin-top: 5px;
+						z-index: 180;
+
+
+						h2 {
+							font-size: 11px;
+    						line-height: 1.2;
+    						text-align: left;
+    						letter-spacing: 0px;
+    						color: rgb(102,102,102);
+    						font-weight: 300;
+
+    						b {
+    							font-weight: 500;
+    						}
+						}
+					}
+				}
+			}
+
+			// Elementos Comentario Perfil 8
+			#c_10 {
+				float:left;    			
+
+    			// Imagem Perfil
+    			.c_imagem {
+    				z-index: 150;
+    				filter: hue-rotate(0deg) saturate(1) brightness(1) contrast(1) invert(0) sepia(0) blur(0px) grayscale(0);
+    				border-radius: 100px;
+    				float: left;
+
+    				.imagem-fundo{
+    					border: 0px solid rgb(163,186,198);
+    					border-radius: 100px;
+    					background-size:cover;
+    					height: 45px;
+    					width: 45px;
+    					background-repeat: no-repeat;
+    					border-radius: 100px;
+    					opacity: 150;
+    					display: block;
+    				}
+				}
+
+				// Caixa Comentário
+				.c_caixa {
+					margin-left: 50px;
+					z-index: 130;
+    				opacity: 1;
+    				border: 0px solid rgb(163,186,198);
+    				filter: hue-rotate(0deg) saturate(1) brightness(1) contrast(1) invert(0) sepia(0) blur(0px) grayscale(0);
+    				border-radius: 18px;
+    				background-image: none;
+    				background-size: cover;
+    				background-color: rgb(240,242,245);
+    				background-position: 50% 50%;
+    				background-repeat: no-repeat;
+
+    				// Nome Comentario
+					.c_nome {
+						z-index: 150;
+    					padding-left:10px;
+    					padding-top: 5px;
+    				
+    					h4{
+    						font-size: 11px;
+    						line-height: 20px;
+    						letter-spacing: 0px;
+    						text-align: left;
+    						color: #181818;
+    						font-weight: 500;
+    					}
+
+					}
+
+					// Texto Comentario
+					.c_comentario{
+						z-index: 200;
+						padding-left: 10px;
+						padding-right: 10px;
+						padding-bottom: 5px;
+						margin-top:-10px;
+
+						h3{
+    						font-size: 13px;
+    						line-height: 15px;
+    						text-align: left;
+    						letter-spacing: 0px;
+    						color: #696969;
+    						font-weight: 300;
+    					}
+					}
+
+					// Curtir, Comentar e Tempo
+					.c_interacoes {
+						float:left;
+						margin-left: 15px;
+						margin-top: 5px;
+						z-index: 180;
+
+
+						h2 {
+							font-size: 11px;
+    						line-height: 1.2;
+    						text-align: left;
+    						letter-spacing: 0px;
+    						color: rgb(102,102,102);
+    						font-weight: 300;
+
+    						b {
+    							font-weight: 500;
+    						}
+						}
+					}
+				}
+			}
+
+			// Informações Inferior
+			#c_11 {
+				margin-top: 650px;
+
+				.c_login {
+					justify-content: center;
+					z-index: 200;
+
+					h2 {
+    					font-size: 10px;
+    					line-height: 1.6;
+    					text-align: center;
+    					letter-spacing: 0px;
+    					color: #666666;
+    					font-weight: 300;
+					}
+				}
+			}
+
+			// Linha Horizontal Inferior
+			#c_12 {
+
+    			.c_linha_horizontal {
+    				z-index: 150;
+    				border-bottom: 1px solid rgb(222,231,235);
+				}
+			}
+
+			// Plugin facebook
+			#c_13 {
+				padding-left: 10px;
+				padding-bottom: 10px;
+
+				.c_imagem{
+					z-index: 300;
+    				filter: hue-rotate(0deg) saturate(1) brightness(1) contrast(1) invert(0) sepia(0) blur(0px) grayscale(0);
+    				float:left;
+
+					svg{
+						color:#3877D4;
+						border: 0px solid rgb(163,186,198);
+    					border-radius: 0px;
+    					opacity: 325;
+    					height: 12px;
+    					width: 12px;
+					}
+				}
+
+				.c_titulo {
+					padding-left: 15px;
+					padding-top:5px;
+    				z-index: 300;
+    				align-items:center;
+    				opacity: 1;
+
+    				h2{
+    					font-size: 10px;
+    					line-height: 1.4;
+    					font-weight: 500;
+    					color: #5d5d5d;
+    					text-align: left;
+    				}
+				}
+
+			}
+    	}
+	}
+}

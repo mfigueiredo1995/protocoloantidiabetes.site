@@ -1,0 +1,44 @@
+footer {
+	float:left;
+	background: $cor-secundaria;
+	justify-content: center;
+	align-items: center;
+
+	.rodape{
+		max-width: 550px;
+
+		img {
+			margin-bottom: 20px;
+		}
+
+		p, span, a {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 100;
+		}
+
+		p{	
+			margin-top: 20px;
+			color: #fff;
+			font-size: 12px;
+
+		}
+
+		span {
+			color: $branco;
+			font-size: 12px;
+			display: block;		
+		}
+
+		a {
+			color: $branco;
+			font-size: 10px;
+
+			&:hover{
+				color:#9F9F9F;
+			}
+		}
+
+
+	}
+
+}
