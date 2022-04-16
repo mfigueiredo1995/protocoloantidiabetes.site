@@ -810,7 +810,7 @@ footer .rodape {
   max-width: 550px;
 }
 footer .rodape img {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 footer .rodape p, footer .rodape span, footer .rodape a {
   font-family: "Montserrat", sans-serif;
